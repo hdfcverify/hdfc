@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  width: 100vw;
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a4ac9;
+  color: white;
+}
+
+.navbar > ul {
+  margin-right: 2vw;
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.navbar > ul > li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.navbar > ul > li > img {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.center_part {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center_part > h1 {
+  color: red;
+}
+
+.center_part > p {
+  font-size: 1.2rem;
+}
+
+.added_bottom_part {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom_part {
+  width: max-content;
+  margin-top: 8vh;
+  padding: 2rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 5px solid hsla(0, 0%, 50%, 0.6);
+  border-radius: 2rem;
+}
+
+.bottom_part > p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.bottom_part > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+}
+
+.button_part {
+  margin-top: 2rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Apply the button styles to the anchor tag */
+.button-link {
+  text-decoration: none;
+  border: 5px solid #0a4ac9;
+  background-color: #0a4ac9;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.button-link:active {
+  transform: translateY(0.2rem);
+}
+
+@media (max-width: 768px) {
+  .navbar > img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .navbar > ul {
+    margin-right: 1rem;
+  }
+
+  .navbar > ul > li {
+    font-size: 0.8rem;
+  }
+
+  .center_part > h1 {
+    font-size: 1.5rem;
+  }
+
+  .center_part > p {
+    font-size: 1rem;
+  }
+
+  .bottom_part {
+    padding: 1rem 2rem;
+  }
+
+  .bottom_part > p {
+    font-size: 0.8rem;
+  }
+
+  .bottom_part > ul {
+    gap: 0.5rem;
+  }
+
+  .button-link {
+    padding: 0.2rem 0.5rem;
+  }
+}

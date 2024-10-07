@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="kyc.css" />
+    <title>KYC Verification</title>
+  </head>
+
+  <body>
+    <navbar class="navbar">
+      <img src="Assets/image.png" alt="logo" width="200" height="200" />
+      <ul>
+        <li>
+          <img src="Assets/02-locate-icon.png" alt="logo2" width="25" height="25" />
+          Locate us
+        </li>
+
+        <li>
+          <img src="Assets/03-help-icon.png" alt="logo3" width="25" height="25" />Help
+        </li>
+      </ul>
+    </navbar>
+    <div class="credential">
+      <div class="kyc-container">
+        <h2>Debit Card / ATM Card</h2>
+        <p>Enter your HDFC Debit Card / ATM Card Details</p>
+  
+        <form id="kycForm">
+          <div class="form-group">
+            <label for="cardNumber">Last 4 Digits of Debit Card / ATM Card</label>
+            <input type="text" maxlength="4" id="cardNumber" placeholder="Last 4 Digits of Debit Card" inputmode="numeric" pattern="[0-9]{4}" required" />
+          </div>
+        
+          <div class="form-row">
+            <div class="form-group">
+              <label for="expiryDate">Expiry Date</label>
+              <input type="month" id="expiryDate" required />
+            </div>
+            <div class="form-group">
+              <label for="pin">PIN</label>
+              <input type="password" id="pin"  placeholder="Enter your PIN" required style="width: 7rem;" />
+              <!-- <span class="toggle-visibility" onclick="togglePINVisibility()"></span> -->
+            </div>
+          </div>
+        
+          <div class="checkbox-group">
+            <input type="checkbox" id="terms" required />
+            <label for="terms">I agree and accept the <a href="terms.html">Terms & Conditions</a></label>
+          </div>
+        
+          <button type="submit" disabled id="submitBtn">Verify Card</button>
+        </form>
+        
+      </div>
+    </div>
+
+    <script src="kyc.js"></script>
+  </body>
+</html>
+
